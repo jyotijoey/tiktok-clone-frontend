@@ -1,6 +1,6 @@
 import React from 'react';
 import "./VideoFooter.css";
-import MusicNoteIcon from "@material-ui/icons/MusicNote";
+import MusicNoteIcon from '@material-ui/icons/MusicNote';
 import Ticker from "react-ticker";
 
 
