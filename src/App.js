@@ -2,6 +2,8 @@ import React, {useEffect, useState} from "react";
 import axios from './axios';
 import './App.css';
 import Video from './Video';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Entry from "./Input";
 
 function App() {
 
@@ -26,8 +28,14 @@ function App() {
   
   return (
     <div className="app">
+      
       <div className="app__videos">
-      {console.log(videos)}
+      <Router>
+      <Switch>
+      <Route path={"/input"}>
+       <Entry />
+      </Route>
+       <Route path={"/"}>
       {/* App Container */}
       {videos.map(({link, description, channel, song, likes, messages, shares}) => (
       <Video 
@@ -40,6 +48,9 @@ function App() {
       shares={shares}
       />
       ))}
+      </Route>
+      </Switch>
+      </Router>
       </div>
     </div>
   );

@@ -1,0 +1,32 @@
+.input{
+    background-color: rgb(163, 70, 27);
+    height:750px;
+    color: aliceblue;
+    padding-top: 50%;
+}
+
+input{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: auto;
+    margin-top: 5px;
+    width: 10cm;
+    padding: 20px;
+    border: 0ch;
+    border-radius: 15px;
+    outline-width: 0;
+    
+}
+
+button{
+    flex:1;
+    border: 0ch;
+    display: grid;
+    margin: 10px auto;
+    font-size: 16px;
+    font-style:initial;
+    font-weight: 800;
+    cursor: pointer;
+    border-radius: 5px;
+}
