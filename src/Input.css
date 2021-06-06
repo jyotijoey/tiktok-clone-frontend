@@ -1,6 +1,7 @@
 .input{
     background-color: rgb(163, 70, 27);
-    height:750px;
+    height:100vh;
+    overflow: hidden;
     color: aliceblue;
     padding-top: 50%;
 }
